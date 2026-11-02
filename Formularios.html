@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Document</title>
+</head>
+<body>
+   <h1>Formularios</h1>
+    
+<!-- FORMULARIO BÑASICO
+   FORM +  acction: a donde se envía|| method: get (pasa los datos por la URL) // post (oculto en el cuerpo de los paquetes HTTP). Si no pones method es un get, pero lo tenemos que poner igual.
+
+    Label for = el id del imput al que quieo hacer referencia. // name = clave del dato enviado.
+-->
+
+
+<!-- MI TESORITOOOOOO--> 
+
+<form action="" method="get">
+    <label for="campo1"> Introduce tu nombre</label> <!-- la "dirección" que referencia (campo1) la indiocamos con un id en el input al que hace referencia, en este caso NombrePersona-->
+   <input type="text" name="NombrePersona " id="campo1">  <!-- input pone text de base, alfanumérico. Importantísimo poner un "name" y rellenarlo con lo que sea, siempre junto  -->
+    
+    <input type="submit" value="Enviar">   <!-- para tener donde mandar el input, value indica lo que hay que mandar--> 
+</form>
+<hr>
+<hr>
+<hr>
+<hr>
+
+
+
+
+<!-- Tipos de Inputs-->
+<form action="" method="get">
+Texto <input type="text" name="texto">  <br>    
+Contraseña <input type="password" name="Contrasenia"> 
+<input type="number" name="numero" step="5"> <br>    <!--Número - step indica como sube o baja-->
+<input type="email" name="correo" > <br>    <!-- email-->
+<input type="tel" name="telefono"> <br>     <!-- telefono-->
+<input type="date" name="fecha">  <br>      <!-- fecha-->
+<input type="time" name="hora" >   <br>     <!-- hora-->
+<input type="submit" value="PATATA"> 
+</form>
+
+                <!-- Atributos bñasicos:
+                         value
+                         placeholder
+                        required
+                        minLength
+                        maxLength
+                        min
+                        max
+                        size-->
+
+
+<form action="" method="get">
+
+   USUARIO   <input type="text" name="usuario" value="Pepe" minlength="3" maxlength="8" required><br> <!-- Aparece ya puesto--> <!--minLength y maxLength para caracteres. required obliga a incluirlo-->
+   EDAD      <input type="number" name="edad" min="18" max="67"> <br> <!-- min y max limitan datos-->
+   CIUDAD    <input type="text" name="ciudad" placeholder="Introduce la ciudad donde vives" size="40"> <br> <!-- Aparece en gris. size determina tamaño--> 
+   COMENTARIO <br>
+   <textarea name="comentario" cols="50" rows="5" placeholder="Introduce tu comentario positivo please"></textarea> <br>   <!-- tiene atributos própios-->
+             
+</form>
+
+        <br>
+        <hr>
+        <br>
+
+                <!-- Checkbox, Radio y listas desplegables-->
+                                               
+    <form action="" method="get">
+
+
+        
+        Deporte <input type="checkbox" name="Deporte" value="Sí">  <!-- Value etiqueta a la URL lo que le hayas puesto, en este caso Deporte = Sí-->
+        Lectura <input type="checkbox" name="Lectura">
+        Música <input type="checkbox" name="Música">
+        
+        <hr>
+
+       DAW <input type="radio" name="estudios" value="daw">
+       DAM <input type="radio" name="estudios" value="dam">
+       ASIR <input type="radio" name="estudios" value="asir"> <!-- para que SOLO PUEDA ELEGIR 1 opción en los RADIO tengo que poner el misno mombre a todos los radios. PARA DIFERENCIARLOS, COMO TODOS SALEN ON ASIGNAMOS VALUES DIFERENTES-->
+
+        <br>
+        <hr>
+        <br>
+            <!-- existen dos etiquetas, la que crea la lista es SELECT y das opciones con OPTION (este es el que tiene el VALUE)-->
+        <select name="provincia"">
+        <option disabled selected>ELIGE UNA PROVINCIA</option>  <!-- disabled selected añade la opción pero no permite que se coja-->
+        <option value="cadiz">Cádiz</option>
+        <option value="huelva">Huelva</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="jaen">Jaén</option>  
+        <option value="sevilla">Sevilla</option>
+        <option value="almeria">Almería</option> 
+       <option value="granada">Granada</option> 
+        <option value="malaga">Málaga</option> 
+    </select>
+
+        <br>
+        <hr>
+        <br>
+                <!-- Estado: Disablesd: No editable que hace que el campo no sea editable y no se envía.
+                 
+                Estado: Readonly: No editable y sí se envía.
+                
+                Estado: El cursor al cargar la página-->
+
+            Normal: <input type="text" name="normal" value="editable"> <br>
+            Disabled: <input type="text" name="deshabilitado" disabled value="disabled"><br>
+            Readonly: <input type="text" name="lectura" value="readonly" readonly> <br> <!-- no se puede modificar pero sí se envía a la URL-->
+            Autofocus: <input type="text" name="foco" autofocus > <br> <!-- con autofocus se centra en este formulario al refrescar-->
+             <br>
+             <hr>
+             <br>
+            
+            <!-- TABINDEX-->
+
+            <form action="" method="post"></form>
+            Tercero: <input type="text" name="c3" tabindex="3"> <br>
+            Octavo: <input type="text" name="c8" tabindex="8"> <br>
+            Séptimo: <input type="text" name="c7" tabindex="-1"> <br>
+            Sexto: <input type="text" name="c6" tabindex="6"> <br>
+            Quinto: <input type="text" name="c5" tabindex="5"> <br>
+            Cuarto: <input type="text" name="c4" tabindex="4"> <br>
+            Segundo: <input type="text" name="c2" tabindex="2"> <br>
+            Primero SIUU: <input type="submit" value="Enviar" tabindex="1"> <br>
+
+
+                <!-- Botones + Fieldset + Legend-->
+
+
+            <form action="" method="post">
+
+                 <fieldset> <!-- Aquí metemos los campos que nos interesen, puro visual--> 
+                    
+                <legend> Datos Personales </legend> <!-- Descripción del formulario-->
+                Nombre: <input type="text" name="nombre" value="Kico"> <br>
+                Apellidos: <input type="text" name="apellidos" value="Heredia Cortés"> <!-- lo que contiene-->
+                </fieldset>   
+
+                <fieldset style="background-color: aqua;"">
+                    <legend>Botones para enviar</legend>
+                    <input type="submit" value="El submit">
+                    <input type="reset" value="Reseteo">
+                    <button>Enviar</button>
+                    <input type="button" value="JS" onclick=" alert ('eoeoeo')">
+                </fieldset>
+            </form>
+       <input type="submit" value="Enviar"> 
+    </form>
+</body>
+</html>

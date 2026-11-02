@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    
+<!--------TABLE crea tablas------->
+<!--------CAPTION crea el título de las tablas------->
+<!--------TR crea una fila en las tablas------->
+<!--------TD permite meter datos en las tablas------->
+<!--------TH es parecido al head pero para celdas formato cabeceras------->
+
+
+<!--------Fórmula automática tr y td------->
+<!-------nombre de la etiqueta tr>td*2------->
+
+<!--------THEAD crea la cabecera de las tablas------->
+<!--------TBODY crea el contenido de las tablas------->
+<!-------- TFOOT crea el pie, resumen o conclusión de las tablas------->
+
+
+<!--------vamos a crear la primera tabla------->
+
+         <table border="">  <!-------o border1...2....20...------->
+           
+            <caption> El precio de los manguitos</caption>
+        
+            <thead style="background-color: aqua;">
+            <tr>
+                <th>Provincia</th>
+                <th>Precio</th>
+            </tr>
+            </thead>
+            
+            <tbody style="background-color: burlywood;">
+
+           <tr>
+                <td>Alicante </td>
+                <td>3.5€</td>
+            </tr>
+
+            <tr>
+                <td>Granada </td>
+                <td>1.8€</td>
+            </tr>
+
+            <tr>
+                <td>  Málaga </td>
+                <td>2€</td>
+            </tr>  
+
+            </tbody>
+            
+            <tfoot style="background-color: yellow;">
+
+                <tr>
+                    <th>Media</th>
+                    <th>2.4€</th>
+                </tr>
+                
+            </tfoot>
+
+         </table>
+
+        
+         <br>
+         <hr>
+         <br>
+
+
+         <table border="1">
+
+            <caption>Tabla de empleados</caption>
+
+            <thead>
+            <tr style="background-color: darkkhaki;">
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Nómina</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Paco</td>
+                    <td>60</td>
+                    <td>Málaga</td>
+                    <td>2800€</td>
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Miriam</td>
+                    <td>26</td>
+                    <td>Granada</td>
+                    <td>1100€</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>74</td>
+                    <td>Cádiz</td>
+                    <td>3200€</td>
+                </tr>
+                <tr>
+                    <td>Ale</td>
+                    <td>18</td>
+                    <td>Mallorca</td>
+                    <td>920€</td>   
+                </tr>
+
+            </tbody>
+  </table>
+
+
+         <br>
+         <hr>
+         <br>
+
+
+<!--------COLGROUP y COL sirven para colorear "columnas"------->
+
+
+        <table border="">
+
+            <colgroup>
+                     <col style="background-color: rgb(115, 119, 131);">
+                     <col style="background-color: lightgoldenrodyellow;">
+            </colgroup>
+
+            <tr>
+                <td>Paco</td>
+                <td>2800</td>
+            </tr>
+
+            <tr>
+                <td>Miriam</td>
+                <td>1100</td>
+            </tr>
+         </table>
+
+
+         <br>
+         <hr>
+         <br>
+
+
+
+         <table border="">
+
+            <caption><b> Calendario Febrero</b></caption>
+       
+
+<!--------SPAN en el atributo COL permite indicar el número de columnas donde quiero aplicar el bg"------->
+<!--------para quitar color de alguno dejo el COL y quito el style------->
+
+
+            <colgroup>
+                <col span="2" style="background-color: rgb(106, 208, 208);">
+                <col span="3" style="background-color: rgb(106, 208, 123);"> 
+                <col span="2" style="background-color: rgb(196, 153, 34);">
+            </colgroup>
+
+            <thead>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            </tbody>
+
+         </table>
+
+
+
+         <br>
+         <hr>
+         <br>
+
+
+<!--------Existe un atributo que fusiona celdas. Se llama SPAN ------->
+<!-------COLSPAN va a hacer que NOMBRE COMPLETO ocupe 2 ------->
+
+         <table border="">
+            <tr>
+                <th colspan="2">Nombre completo</th>
+                <th>Edad</th>
+            </tr>
+
+            <tr>
+                <td>Ale</td>
+                <td>Villalba</td>
+                <td>16</td>
+            </tr>
+         </table>
+
+         <br>
+         <hr>
+         <br>
+<!--------Vamos a hacer lo mismo pero con filas ------->
+<!-------se quita el td que no necesites y en el que quieres que abarque ROWSPAN y el numero que ocupa
+------->
+
+
+         <table border="">
+
+            <tr>
+                <th>Nombre</th>
+                <th>Asignatura</th>
+                <th>Nota</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Samu</td>
+                <td>Matemáticas</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+              <!--  <td>Samu</td> -->
+                <td>Lengua</td>
+                <td>10</td>
+            </tr>
+         </table>
+
+
+         <br>
+         <hr>
+         <br>
+
+
+
+          <table border="">
+    
+    <caption style="background-color: gray;">Notas finales del trimestre</caption>
+        
+    <colgroup>
+        <col>
+        <col>
+        <col>
+        <col span="4" style="background-color: rgb(125, 194, 113);">
+    </colgroup>
+
+
+    <tbody>
+        <tr>
+            <th>Alumno</th>
+            <th>LLMM</th>
+            <th>Programación</th>
+            <th>Media</th>
+         </tr>
+
+         <tr>
+            <td>Teresa</td>
+            <td>9</td>
+            <td>10</td>
+            <td>9.5</td>
+         </tr>
+         <tr>
+            <td>Elena</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+         </tr>
+         <tr>
+            <td>Raul</td>
+            <td>4</td>
+            <td>6</td>
+            <td>5</td>
+         </tr>
+
+         <tfoot>
+            <td colspan="3">Media general</td>
+            <td>817</td>
+         </tfoot>
+
+
+
+
+
+
+
+    </tbody>
+
+
+    </table>
+
+    </body>
+
+</html>
+
+
+
